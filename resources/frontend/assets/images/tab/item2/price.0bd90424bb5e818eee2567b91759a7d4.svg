@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="40" viewBox="0 0 70 40">
+    <defs>
+        <radialGradient id="prefix__a" cx="68.166%" cy="65.098%" r="62.366%" fx="68.166%" fy="65.098%">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+        <filter id="prefix__b" width="144.4%" height="144.4%" x="-22.2%" y="-22.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-5 -3)">
+        <path d="M0 0H80V48H0z"/>
+        <rect width="68" height="14" x="6" y="16" fill-rule="nonzero" stroke="#191919" stroke-width="2" rx="3"/>
+        <path fill="#CFCFCF" d="M22 20.038H44V22.038H22z"/>
+        <g transform="translate(8 4)">
+            <path fill="#CFCFCF" d="M14 3H36V5H14zM4 3H12V5H4z"/>
+            <rect width="64" height="8" fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2" rx="3"/>
+        </g>
+        <g transform="translate(8 34)">
+            <path fill="#CFCFCF" d="M14 3H36V5H14zM4 3H12V5H4z"/>
+            <rect width="64" height="8" fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2" rx="3"/>
+        </g>
+        <path fill="#CFCFCF" d="M22 24.038H36V26.038H22z"/>
+        <circle cx="16" cy="23.038" r="3" stroke="#CFCFCF" stroke-width="2"/>
+        <g fill-rule="nonzero">
+            <path fill="url(#prefix__a)" stroke="#FFF" stroke-width="4" d="M3.877.661c-.817.217-1.544.644-2.12 1.22C1.18 2.459.752 3.185.535 4.002l-1.663 6.276c-.433 1.627.035 3.366 1.233 4.563l4.61 4.61c1.198 1.196 2.935 1.663 4.56 1.232l6.276-1.664c.818-.217 1.545-.644 2.122-1.221.577-.578 1.004-1.305 1.22-2.123l1.663-6.272c.432-1.627-.036-3.366-1.234-4.563L14.716.23c-.828-.826-1.408-2.068-10.839.432z" filter="url(#prefix__b)" transform="translate(50 12)"/>
+            <path fill="#2D3137" d="M15.796 5.36c-.427-.427-1.129-.427-1.557 0l-6.387 6.387-2.665-2.664c-.419-.42-1.106-.42-1.526 0l-.032.032c-.42.419-.42 1.107 0 1.526l3.46 3.459c.42.42 1.107.42 1.526 0l.016-.015.015-.016 7.15-7.15c.43-.428.43-1.13 0-1.559" transform="translate(50 12)"/>
+        </g>
+    </g>
+</svg>

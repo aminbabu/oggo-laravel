@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="43" viewBox="0 0 66 43">
+    <defs>
+        <filter id="prefix__b" width="125%" height="124.2%" x="-12.5%" y="-12.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__e" width="126.6%" height="126.4%" x="-13.3%" y="-13.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__f" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="prefix__d" cx="68.166%" cy="65.098%" r="62.366%" fx="68.166%" fy="65.098%" gradientTransform="matrix(1 0 0 .98947 0 .007)">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+        <path id="prefix__a" d="M10.612 2.093L1.725 9.861C.39 11.024-.226 12.807.104 14.539l2.191 11.558c.33 1.733 1.552 3.148 3.212 3.716l11.081 3.792c1.66.568 3.503.202 4.833-.963l8.887-7.767c1.333-1.164 1.95-2.946 1.621-4.679L29.741 8.64c-.33-1.732-1.552-3.147-3.211-3.715L15.444 1.13c-1.66-.568-3.499-.201-4.832.962z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H80V48H0z" transform="translate(-4 -3)"/>
+        <g transform="translate(-4 -3) translate(8 8)">
+            <mask id="prefix__c" fill="#fff">
+                <use xlink:href="#prefix__a"/>
+            </mask>
+            <g fill-rule="nonzero" filter="url(#prefix__b)">
+                <path stroke="#CFCFCF" stroke-width="4" d="M.409 8.355c-1.869 1.63-2.732 4.13-2.27 6.558L.33 26.47c.232 1.22.78 2.328 1.56 3.23.782.905 1.798 1.605 2.97 2.005l11.08 3.792c1.17.4 2.404.472 3.58.238 1.172-.234 2.285-.77 3.219-1.589l8.885-7.765c1.868-1.63 2.732-4.13 2.27-6.559L31.707 8.267c-.233-1.22-.78-2.328-1.56-3.23-.782-.905-1.799-1.605-2.97-2.005L16.092-.762c-1.248-.427-2.577-.784-5.964 1.371C8.127 1.882 5.142 4.22.408 8.355z"/>
+                <path stroke="#FFF" stroke-width="2" d="M1.067 9.108c-1.601 1.397-2.342 3.538-1.946 5.618l2.191 11.558c.2 1.043.667 1.99 1.334 2.762.668.773 1.537 1.37 2.537 1.713l11.082 3.792c1 .342 2.054.403 3.06.203 1.003-.2 1.956-.66 2.755-1.36l8.886-7.766c1.6-1.397 2.341-3.538 1.945-5.619L30.724 8.453c-.199-1.043-.666-1.99-1.334-2.762-.668-.773-1.536-1.371-2.537-1.713L15.768.184c-1.079-.369-2.225-.563-5.103 1.269-1.977 1.258-4.923 3.57-9.598 7.655z"/>
+            </g>
+            <g mask="url(#prefix__c)">
+                <g>
+                    <path fill-rule="nonzero" stroke="#191919" stroke-width="2" d="M15 0H31V22.5H15z" transform="translate(-8 10)"/>
+                    <path fill-rule="nonzero" stroke="#191919" stroke-width="2" d="M31 12H40.478V22.5H31z" transform="translate(-8 10) matrix(-1 0 0 1 71.478 0)"/>
+                    <path fill-rule="nonzero" stroke="#191919" stroke-width="2" d="M4.734 8.554H15V22.5H4.734z" transform="translate(-8 10) matrix(-1 0 0 1 19.734 0)"/>
+                    <path fill="#191919" d="M14 4.038H22V6.038H14zM25 4.038H28V6.038H25zM14 8H22V10H14zM25 8H28V10H25zM14 12H22V14H14zM25 12H28V14H25z" transform="translate(-8 10)"/>
+                    <path fill="#FFF" fill-rule="nonzero" stroke="#191919" stroke-width="2" d="M44.42 26.6C32.314 14.495 12.686 14.495.58 26.6" transform="translate(-8 10)"/>
+                </g>
+            </g>
+        </g>
+        <path fill="url(#prefix__d)" fill-rule="nonzero" stroke="#FFF" stroke-width="2" d="M28.808 5.514c-.567.152-1.07.45-1.47.854-.397.402-.692.908-.841 1.478l-1.388 5.29c-.299 1.135.026 2.347.852 3.18l3.846 3.888c.416.419.924.71 1.469.859.548.15 1.133.157 1.7.005l5.235-1.403c.566-.152 1.07-.45 1.47-.855.398-.402.693-.909.842-1.479l1.387-5.289c.298-1.134-.026-2.346-.852-3.18l-3.845-3.887c-.444-.448-.933-.888-2.813-.685-1.088.117-2.797.475-5.592 1.224z" filter="url(#prefix__e)" transform="translate(-4 -3)"/>
+        <g transform="translate(-4 -3) translate(37 3)">
+            <rect width="31" height="39" x="1" y="1" fill="#FFF" fill-rule="nonzero" stroke="#191919" stroke-width="2" filter="url(#prefix__f)" rx="4"/>
+            <path fill="#191919" d="M7 19.038H24V21.038H7z"/>
+            <path fill="#CFCFCF" d="M7 29.038H24V31.038H7z"/>
+            <path fill="#191919" d="M7 23.038H20V25.038H7z"/>
+            <path fill="#CFCFCF" d="M7 33.038H20V35.038H7z"/>
+            <path fill="#CFCFCF" fill-rule="nonzero" d="M2 14H31V16H2z"/>
+            <path fill="#CFCFCF" fill-rule="nonzero" d="M15.771 9.047L23 15H6l7.229-5.953c.738-.608 1.804-.608 2.542 0z"/>
+            <path fill="#CFCFCF" fill-rule="nonzero" d="M24.024 6.793L31 15H14l6.976-8.207c.715-.842 1.978-.944 2.82-.229.082.07.158.147.228.229z"/>
+            <circle cx="10" cy="6" r="2" fill="#CFCFCF" fill-rule="nonzero"/>
+        </g>
+    </g>
+</svg>

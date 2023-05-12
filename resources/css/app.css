@@ -1,0 +1,9 @@
+/* third party libraries */
+@import "../frontend/vendor/fontawesome-free640/css/all.min.css";
+@import "../frontend/vendor/bootstrap530/css/bootstrap.min.css";
+@import "../frontend/vendor/jquery-nice-select110/css/nice-select.css";
+@import "../frontend/vendor/owlCarousel2/assets/owl.carousel.min.css";
+
+/* custom styles */
+@import "../frontend/assets/css/style.css";
+@import "../frontend/assets/css/responsive.css";

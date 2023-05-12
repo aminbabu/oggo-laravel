@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="48" viewBox="0 0 65 48">
+    <defs>
+        <circle id="prefix__e" cx="23.734" cy="42" r="2.5"/>
+        <circle id="prefix__f" cx="60.306" cy="34.409" r="2.5"/>
+        <circle id="prefix__h" cx="48.272" cy="41.643" r="2.5"/>
+        <circle id="prefix__i" cx="10.006" cy="40.415" r="2.5"/>
+        <circle id="prefix__k" cx="6.449" cy="30.867" r="2.5"/>
+        <path id="prefix__b" d="M42.123 24l-7.826 15.777C33.622 41.14 32.233 42 30.714 42h-5.172"/>
+        <path id="prefix__c" d="M46.353 24l-6.78 13.667c-.735 1.484-.129 3.284 1.355 4.02.415.206.87.313 1.333.313h4.092"/>
+        <path id="prefix__d" d="M51.234 23l-4.41 8.487c-.51.98-.128 2.188.852 2.697.285.148.602.225.923.225h9.707"/>
+        <path id="prefix__g" d="M38.537 23l-5.219 9.754c-.696 1.301-2.052 2.113-3.527 2.113h-14.43c-1.006 0-1.946.505-2.502 1.345l-1.504 2.275"/>
+        <path id="prefix__j" d="M36.173 19l-5.218 9.754c-.696 1.301-2.052 2.113-3.527 2.113H8"/>
+        <radialGradient id="prefix__l" cx="31.694%" cy="50%" r="160.733%" fx="31.694%" fy="50%" gradientTransform="scale(.61765 1) rotate(5.39 .415 2.584)">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+        <filter id="prefix__a" width="108.9%" height="109.1%" x="-4.4%" y="-4.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H80V48H0z" transform="translate(-1)"/>
+        <path fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2" d="M30.085 4.124c-2.709.511-4.974 2.432-5.942 5.047L18.494 24.4c-.971 2.625-.49 5.53 1.254 7.635l10.143 12.245c.877 1.058 2.006 1.834 3.256 2.28 1.248.445 2.617.562 3.978.303l15.787-2.99c2.709-.51 4.974-2.431 5.942-5.046l5.652-15.226c.971-2.625.49-5.531-1.254-7.636L53.106 3.718c-.949-1.146-2.114-2.098-6.542-1.947-3.169.107-8.2.786-16.48 2.353z" filter="url(#prefix__a)" transform="translate(-1)"/>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__b"/>
+            <use stroke="#CFCFCF" stroke-width="2" xlink:href="#prefix__b"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__c"/>
+            <use stroke="#CFCFCF" stroke-width="2" xlink:href="#prefix__c"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__d"/>
+            <use stroke="#191919" stroke-width="2" xlink:href="#prefix__d"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__e"/>
+            <use stroke="#CFCFCF" stroke-width="2" xlink:href="#prefix__e"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__f"/>
+            <use stroke="#191919" stroke-width="2" xlink:href="#prefix__f"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__g"/>
+            <use stroke="#191919" stroke-width="2" xlink:href="#prefix__g"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__h"/>
+            <use stroke="#CFCFCF" stroke-width="2" xlink:href="#prefix__h"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__i"/>
+            <use stroke="#191919" stroke-width="2" xlink:href="#prefix__i"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__j"/>
+            <use stroke="#CFCFCF" stroke-width="2" xlink:href="#prefix__j"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(-1)">
+            <use stroke="#FFF" stroke-width="5" xlink:href="#prefix__k"/>
+            <use stroke="#CFCFCF" stroke-width="2" xlink:href="#prefix__k"/>
+        </g>
+        <path fill="url(#prefix__l)" stroke="#FFF" stroke-width="2" d="M48.157 6.44c-1.91-.688-3.919-.543-5.624.248-1.425.661-2.637 1.773-3.403 3.224-1.354-.353-2.804-.207-4.072.432-1.293.652-2.28 1.756-3.222 3.068-1.887 0-3.595.76-4.831 1.987C25.765 16.63 25 18.33 25 20.206c0 1.877.766 3.576 2.005 4.807C28.24 26.24 29.949 27 31.836 27h19.631c1.721-.003 3.28-.69 4.416-1.803 1.139-1.115 1.852-2.657 1.878-4.368.026-1.71-.64-3.273-1.745-4.422-.83-.864-1.91-1.494-3.126-1.774.282-1.528.06-3.067-.575-4.415-.798-1.695-2.247-3.089-4.158-3.778z" transform="translate(-1)"/>
+    </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="48" viewBox="0 0 53 48">
+    <defs>
+        <filter id="prefix__a" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__c" width="126.6%" height="126.4%" x="-13.3%" y="-13.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__d" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="prefix__b" cx="68.166%" cy="65.098%" r="62.366%" fx="68.166%" fy="65.098%" gradientTransform="matrix(1 0 0 .98947 0 .007)">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-13 2) translate(13 5)">
+            <rect width="39" height="31" x="1" y="1" fill="#FFF" fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2" filter="url(#prefix__a)" rx="4"/>
+            <path fill="#CFCFCF" d="M16 7H26V9H16z"/>
+            <path fill="#191919" d="M16 20H26V22H16z"/>
+            <path fill="#CFCFCF" d="M16 11H46V13H16z"/>
+            <path fill="#191919" d="M16 24H46V26H16z"/>
+            <circle cx="9" cy="10" r="3" stroke="#CFCFCF" stroke-width="2"/>
+            <circle cx="9" cy="23" r="3" stroke="#191919" stroke-width="2"/>
+            <path fill="#CFCFCF" d="M15.5 32h11v5h10c.552 0 1 .448 1 1s-.448 1-1 1h-31c-.552 0-1-.448-1-1s.448-1 1-1h10v-5z"/>
+        </g>
+        <path fill="url(#prefix__b)" fill-rule="nonzero" stroke="#FFF" stroke-width="2" d="M45.789.514c-.566.152-1.07.45-1.47.854-.397.402-.691.908-.841 1.478l-1.388 5.29c-.298 1.135.026 2.347.852 3.18l3.847 3.888c.415.419.923.71 1.468.859.548.15 1.133.157 1.7.005l5.235-1.403c.567-.152 1.07-.45 1.47-.855.399-.402.693-.909.842-1.479l1.387-5.289c.299-1.134-.026-2.346-.852-3.18L54.194-.024c-.444-.448-.933-.888-2.813-.685-1.087.117-2.796.475-5.592 1.224z" filter="url(#prefix__c)" transform="translate(-13 2)"/>
+        <g transform="translate(-13 2) translate(46 12)">
+            <rect width="18" height="32" x="1" y="1" fill="#FFF" fill-rule="nonzero" stroke="#191919" stroke-width="2" filter="url(#prefix__d)" rx="4"/>
+            <path fill="#CFCFCF" d="M10 13H15V15H10z"/>
+            <circle cx="6" cy="14" r="1" stroke="#CFCFCF" stroke-width="2"/>
+            <path fill="#191919" d="M10 19H15V21H10z"/>
+            <path fill="#CFCFCF" d="M10 25H15V27H10zM2 7H18V9H2z"/>
+            <circle cx="6" cy="20" r="1" stroke="#191919" stroke-width="2"/>
+            <circle cx="6" cy="26" r="1" stroke="#CFCFCF" stroke-width="2"/>
+        </g>
+    </g>
+</svg>

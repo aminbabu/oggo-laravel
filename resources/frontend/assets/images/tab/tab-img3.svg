@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="141" viewBox="0 0 260 141">
+    <defs>
+        <radialGradient id="prefix__b" cx="31.694%" cy="50%" r="99.984%" fx="31.694%" fy="50%">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+        <rect id="prefix__a" width="48" height="84.2" x="0" y="0" rx="7.2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(2 5)">
+        <path fill="#CFCFCF" d="M25.5 109H84.3V113.4H25.5zM25.5 85H84.3V89.4H25.5zM25.5 61H84.3V65.4H25.5z"/>
+        <g fill-rule="nonzero" transform="translate(0 41)">
+            <path stroke="#191919" stroke-dasharray="4.8" stroke-width="4.8" d="M7.722 0H180.8c3.976 0 7.2 3.224 7.2 7.2V85c0 3.976-3.224 7.2-7.2 7.2H7.722c-3.977 0-7.2-3.224-7.2-7.2V7.2c0-3.976 3.223-7.2 7.2-7.2z"/>
+            <rect width="39" height="13" x="129" y="67" fill="#CFCFCF" rx="3"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(20 9)">
+            <use fill="#FFF" stroke="#FFF" stroke-width="11" xlink:href="#prefix__a"/>
+            <use stroke="#191919" stroke-width="4.8" xlink:href="#prefix__a"/>
+            <rect width="32" height="12" x="8" y="63" fill="#FFCD4D" rx="3"/>
+            <path fill="#FFCD4D" stroke="#191919" stroke-width="4.8" d="M16 40.694L16 20.427 24 14.216 32 20.427 32 40.694"/>
+            <path stroke="#191919" stroke-width="4.8" d="M0 44.961L0 26.427 8 20.216 16 26.427 16 40.694M47.25 46.37c-12.979-8-34.021-8-47 0"/>
+            <path stroke="#191919" stroke-width="4.8" d="M32 41.083L32 24.998 48 24.998 48 44.961"/>
+        </g>
+        <path fill="#191919" d="M96.5 109H120.3V113.4H96.5z"/>
+        <rect width="39" height="13" x="129" y="84" fill="#CFCFCF" fill-rule="nonzero" rx="3"/>
+        <path fill="#191919" d="M96.5 85H120.3V89.4H96.5z"/>
+        <rect width="39" height="13" x="129" y="60" fill="#CFCFCF" fill-rule="nonzero" rx="3"/>
+        <path fill="#191919" d="M96.5 61H120.3V65.4H96.5z"/>
+        <path fill="url(#prefix__b)" stroke="#FFF" stroke-width="4.8" d="M179.169 6.65c-2.819.748-5.324 2.219-7.312 4.208-1.989 1.989-3.46 4.496-4.21 7.316l-8.5 32.067c-1.497 5.63.127 11.644 4.27 15.781l23.564 23.564c4.144 4.138 10.15 5.762 15.777 4.27l32.073-8.504c2.82-.747 5.329-2.22 7.32-4.21 1.989-1.991 3.46-4.499 4.204-7.318l8.498-32.063c1.497-5.63-.127-11.643-4.27-15.78L227.03 2.414c-3.7-3.694-8.317-6.249-47.861 4.236z"/>
+    </g>
+</svg>

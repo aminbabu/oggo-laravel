@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="48" viewBox="0 0 49 48">
+    <defs>
+        <radialGradient id="prefix__c" cx="68.166%" cy="65.098%" r="62.366%" fx="68.166%" fy="65.098%">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+        <filter id="prefix__a" width="110.1%" height="110.4%" x="-5%" y="-5.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <path id="prefix__b" d="M20.714 10.329c6.187 0 11.203 5.016 11.203 11.203 0 6.187-5.016 11.203-11.203 11.203-2.185 0-4.225-.626-5.948-1.708L10.92 32.31c-.373.125-.776-.077-.9-.45-.049-.145-.049-.303 0-.45l1.272-3.814c-1.127-1.748-1.781-3.829-1.781-6.063 0-6.187 5.016-11.203 11.203-11.203z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2.103" d="M45.567 27.525c-.274 1.219-.866 2.375-1.75 3.342l-10.1 11.035c-1.763 1.93-4.414 2.8-6.959 2.288L12.18 41.267c-1.279-.255-2.432-.84-3.365-1.665-.937-.83-1.65-1.903-2.045-3.132L2.287 22.503c-.394-1.227-.439-2.516-.164-3.74.275-1.22.867-2.376 1.75-3.343l10.1-11.04c1.762-1.93 4.413-2.8 6.958-2.287l14.58 2.922c1.28.258 2.434.843 3.366 1.668.936.83 1.649 1.9 2.043 3.129l4.483 13.972c.394 1.226.44 2.515.164 3.74z" filter="url(#prefix__a)" transform="translate(-16) matrix(-1 0 0 1 62.844 1.859)"/>
+            <g transform="translate(-16) matrix(-1 0 0 1 62.844 1.859) matrix(-1 0 0 1 32.844 .141)">
+                <g fill-rule="nonzero" transform="matrix(-1 0 0 1 41.428 0)">
+                    <use fill="#FFF" stroke="#FFF" stroke-width="6" xlink:href="#prefix__b"/>
+                    <use stroke="#191919" stroke-width="2" xlink:href="#prefix__b"/>
+                </g>
+                <path fill="url(#prefix__c)" fill-rule="nonzero" stroke="#FFF" stroke-width="2" d="M26.432 12.74c0 3.771-1.529 7.186-4 9.658-2.472 2.471-5.887 4-9.658 4-2.494 0-4.83-.668-6.843-1.835l-4.083 1.361c-.448.15-.915.103-1.306-.093-.493-.246-.868-.73-.94-1.356l1.437-4.743C-.183 17.687-.885 15.295-.885 12.74c0-3.772 1.529-7.187 4-9.658C5.588.61 9.003-.92 12.775-.92c3.771 0 7.186 1.529 9.658 4 2.471 2.472 4 5.887 4 9.659z"/>
+                <path stroke="#191919" stroke-linecap="round" stroke-width="2.027" d="M12.574 15.596c0-1.07.037-1.775.898-2.586 1.423-1.342 2.505-1.778 2.437-3.594-.06-1.588-1.059-2.742-2.625-3.025-1.584-.286-3.123.423-3.653 2.033"/>
+                <circle cx="12.626" cy="18.891" r="1.333" fill="#191919" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+</svg>

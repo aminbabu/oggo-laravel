@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="52" viewBox="0 0 71 52">
+    <defs>
+        <filter id="prefix__a" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__c" width="135.1%" height="133.2%" x="-17.6%" y="-16.6%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="prefix__b" cx="68.166%" cy="65.098%" r="62.366%" fx="68.166%" fy="65.098%" gradientTransform="matrix(1 0 0 .94613 0 .035)">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-7 4) translate(7)">
+            <path fill="#CFCFCF" d="M20 12.038H40V14.038H20z"/>
+            <path fill="#191919" d="M20 24.038H40V26.038H20z"/>
+            <path fill="#CFCFCF" d="M20 36.038H40V38.038H20zM20 16.038H50V18.038H20z"/>
+            <path fill="#191919" d="M20 28.038H50V30.038H20z"/>
+            <path fill="#CFCFCF" d="M20 40.038H50V42.038H20z"/>
+            <rect width="56" height="40" x="1" y="7" fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2" filter="url(#prefix__a)" rx="4"/>
+            <path fill="url(#prefix__b)" fill-rule="nonzero" stroke="#FFF" stroke-width="4" d="M67.196 18.11c-.134.988-.525 1.9-1.11 2.657-.589.762-1.374 1.368-2.296 1.74l-7.843 3.17c-.921.372-1.907.481-2.86.342-.947-.138-1.862-.523-2.647-1.142l-6.691-5.288c-1.56-1.23-2.355-3.198-2.088-5.165l1.142-8.453c.133-.99.524-1.902 1.11-2.66.589-.763 1.375-1.37 2.297-1.742L54.05-1.6c.922-.373 1.908-.482 2.86-.343.948.138 1.862.523 2.647 1.142l6.694 5.287c1.56 1.23 2.355 3.199 2.088 5.165l-1.143 8.457z" filter="url(#prefix__c)"/>
+            <circle cx="9" cy="15.038" r="3" stroke="#CFCFCF" stroke-width="2"/>
+            <circle cx="9" cy="27.038" r="3" stroke="#191919" stroke-width="2"/>
+            <circle cx="9" cy="39.038" r="3" stroke="#CFCFCF" stroke-width="2"/>
+            <path fill="#000" fill-rule="nonzero" d="M57.799 13.777c.59-.806.943-1.795.943-2.868 0-2.686-2.186-4.87-4.871-4.87-2.686 0-4.871 2.184-4.871 4.87s2.185 4.87 4.87 4.87c1.074 0 2.063-.352 2.87-.942l3.19 3.19 1.06-1.059-3.191-3.19zm-3.928.504c-1.86 0-3.372-1.513-3.372-3.372 0-1.86 1.512-3.372 3.372-3.372 1.86 0 3.372 1.512 3.372 3.372 0 1.86-1.513 3.372-3.372 3.372z"/>
+        </g>
+    </g>
+</svg>

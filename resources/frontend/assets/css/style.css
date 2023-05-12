@@ -1,0 +1,2443 @@
+/*
+  Template Name: Traviaota dev
+  Template URI: https://traviaotadev.com/
+  Author Name:
+  Author URI: https://
+  Version: 1.0.0
+  Description: This is figma to HTML
+  Tags: figma, html, Css, Bootstrap
+*/
+
+/****** Google fonts *******/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif; */
+
+/*     Start Default CSS
+*********************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 8rem;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #12141d;
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: capitalize;
+    color: #20252c;
+}
+
+h2 {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #12141d;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+h4 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #101828;
+}
+
+h5 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3f3f46;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn1 {
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 13px 20px;
+    background: #30bc90;
+    border-radius: 8px;
+    transition: 0.5s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.btn2 {
+    font-weight: 700;
+    line-height: 28px;
+    padding: 13px 32px;
+    border-radius: 10px;
+}
+
+.btn3 {
+    font-weight: 600;
+    line-height: 16px;
+    padding: 16px 24px;
+    border-radius: 90px;
+}
+
+.btn1:hover {
+    color: #ffffff;
+    background: #009f6b;
+}
+
+.btn_outline_light {
+    border: 1px solid #d0d5dd;
+    color: #101828;
+    background-color: transparent;
+}
+
+.btn_outline_light:hover {
+    background-color: #d0d5dd;
+    color: #101828;
+}
+
+.container {
+    max-width: 1296px;
+    width: 92%;
+    margin: auto;
+}
+
+.list-caret-success ul {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.list-caret-success ul li {
+    display: flex;
+    gap: 1rem;
+}
+
+.list-caret-success ul li::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f0da";
+    color: #30bc90;
+}
+
+/*     End Default CSS
+*********************************/
+
+/*     Start Header Menu Area CSS
+*********************************/
+.header-area {
+    padding: 15px 0;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+}
+
+.header-logo {
+    flex-shrink: 0;
+}
+
+.header-logo img {
+    width: 153px;
+    min-width: 126px;
+    height: auto;
+}
+
+.header-display {
+    display: block;
+    max-width: 1123px;
+    width: 100%;
+}
+
+.header-nav-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-button {
+    max-width: 173px;
+    width: 100%;
+    text-align: right;
+}
+
+.header-display .header-button {
+    display: none;
+}
+
+.cta-btn {
+    flex-shrink: 0;
+}
+
+.header-nav {
+    width: 100%;
+}
+
+.header-nav nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav nav ul li a {
+    margin: 0 10px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #12141d;
+    text-transform: capitalize;
+    transition: 0.5s;
+    position: relative;
+    white-space: nowrap;
+}
+
+.lang_tr .header-nav nav ul li a {
+    font-size: 0.875rem;
+}
+
+.header-nav nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #30bc90;
+    transition: 0.5s;
+}
+
+.header-nav nav ul li a.active::before,
+.header-nav nav ul li:hover a::before {
+    width: 100%;
+}
+
+/* mobile menu icon css start */
+.mobile-menu {
+    display: none;
+}
+
+#nav-icon4 {
+    width: 28px;
+    height: 23px;
+    position: relative;
+    margin: 0px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000000;
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+#nav-icon4 span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+    top: 8px;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+    top: 16px;
+    transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px;
+    left: 2px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 18px;
+    left: 2px;
+}
+
+/* mobile menu icon css end */
+/*     End Header Menu Area CSS
+*********************************/
+
+/*     Start Banner Area Common CSS
+*********************************/
+.banner_title {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.banner_title h1 {
+    padding: 10px 0px 20px 0px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.banner_title p {
+    color: #475467;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner_title .green_text {
+    color: #30bc90;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about_contain .banner_title .green_text {
+    font-weight: 600;
+}
+
+.about_contain .banner_title h1 {
+    font-weight: 700;
+    font-family: "Inter";
+}
+
+.travel-banner-area .banner_title .green_text {
+    font-weight: 600;
+}
+
+/*     End Banner Area Common CSS
+*********************************/
+
+/*   Start Home Banner Area Css
+*********************************/
+.home_header_area {
+    background: rgba(245, 252, 249, 0.5) url(../images/home/home-banner.png)
+        no-repeat scroll center center / cover;
+    backdrop-filter: blur(0.5rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1080;
+}
+
+.home_banner_area {
+    padding: 10rem 0 63px 0;
+}
+
+.home_banner_top {
+    margin-top: 40px;
+}
+
+.home_banner_top p {
+    margin: 24px 0 38px 0;
+    max-width: 538px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #565d62;
+    opacity: 0.8;
+}
+
+.home_rating_section {
+    margin-top: 107px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 0px;
+}
+
+.single_home_ratingImg img {
+    max-width: 60.5px;
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.home_ratingimg_two {
+    margin-left: -25px;
+    z-index: -1;
+}
+
+.home_ratingimg_three {
+    margin-left: -25px;
+    z-index: -111;
+}
+
+.single_home_ratingText1 {
+    padding-right: 27px;
+    position: relative;
+}
+
+.single_home_ratingText1::after {
+    position: absolute;
+    content: " ";
+    right: 0;
+    top: 50%;
+    height: 39px;
+    width: 2px;
+    background: #12141d24;
+    transform: translateY(-50%);
+}
+
+.single_home_ratingText2 {
+    padding-left: 27px;
+}
+
+.single_home_ratingText p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
+.single_home_ratingText h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -1px;
+}
+
+.home_rating {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.single_home_ratingImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding-right: 20px;
+}
+
+.home_rating ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.home_rating ul li i {
+    font-size: 12px;
+    color: #cbd4d8;
+}
+
+.home_rating ul li.active i {
+    color: #ffc947;
+}
+
+.home_bannerImg {
+    text-align: center;
+}
+
+.home_bannerImg img {
+    width: 414px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/*   End Home Banner Area Css
+*********************************/
+
+/*   Start Home Features Section Css
+************************************/
+.home_features_section {
+    padding: 129px 0 83px 0;
+}
+
+.home_features h3 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home_features_contain {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 40px;
+}
+
+.home_featuresTitel {
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+}
+
+.home_featuresTitel img {
+    max-width: 180px;
+    width: 100%;
+    margin: auto;
+}
+
+.home_featuresTitel h4 {
+    margin: 24px 0 8px 0;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home_featuresTitel p {
+    color: #767676;
+}
+
+/*   End Home Features Section Css
+************************************/
+
+/*   Start Home Slider Css
+************************************/
+.home_slider {
+    padding: 96px 0;
+    background: #30bc90;
+}
+
+.home_slider_header p {
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #f5fcf9;
+}
+
+.home_slider_title {
+    margin-top: 48px;
+}
+
+.single_home_slider img {
+    color: #fff;
+    height: 32px;
+}
+
+/*   End Home Slider Css
+************************************/
+
+/*   Start Home Services Area Css
+************************************/
+.home_services_area {
+    padding: 160px 0 80px 0;
+    background: #fffefb;
+}
+
+.home_services_header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.home_services_header h3 {
+    text-transform: capitalize;
+}
+
+.home_services_header p {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #565d62;
+}
+
+.home_services {
+    margin-top: 48px;
+    display: grid;
+    grid-template-areas:
+        "item1 item1 item2 item2 item3 item3"
+        "item4 item4 item5 item5 item6 item6"
+        ". item7 item7 item8 item8 . ";
+    gap: 24px;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 {
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+}
+
+.single_services {
+    padding: 30px 16px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+.single_services:hover {
+    background: #ffffff;
+    box-shadow: 0px 6px 12px rgba(210, 209, 209, 0.25);
+    border-radius: 16px;
+    border: 1px solid transparent;
+}
+
+.single_services span {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f6e8cc;
+    margin-bottom: 24px;
+}
+
+.active_dgcolor span {
+    background: #cff0d1;
+}
+
+.single_services img {
+    max-width: 30px;
+    margin: auto;
+    width: 100%;
+}
+
+.single_services p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3f3f46;
+}
+
+/*   End Home Services Area Css
+************************************/
+
+/*   Start Home Travel Planning Css
+************************************/
+.home_travel_planning {
+    padding: 80px 0;
+}
+
+.home_travelImg {
+    text-align: center;
+}
+
+.home_travelImg img {
+    max-width: 775px;
+    width: 100%;
+    margin: auto;
+}
+
+.home_travelTitle h5 {
+    margin: 22px 0 28px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #12141d;
+}
+
+.home_travelTitle p {
+    line-height: 26px;
+    color: #595b61;
+}
+
+.home_travelTitle {
+    max-width: 499px;
+    margin: auto;
+    width: 100%;
+}
+
+/*   End Home Travel Planning Css
+************************************/
+
+/*   Start Home Travel Planning Css
+************************************/
+.home_customer_section {
+    padding: 110px 0;
+    background: #30bc90;
+}
+
+.home_customer_heder {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 79px;
+}
+
+.home_customer {
+    max-width: 953px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.home_ulkit h4 {
+    max-width: 390px;
+    width: 100%;
+}
+
+.home_ulkit p {
+    max-width: 407px;
+    width: 100%;
+}
+
+.single_home_kit {
+    display: flex;
+    flex-direction: column;
+}
+
+.single_home_kit h4 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.single_home_kit p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #f4f4f5;
+}
+
+.single_there {
+    margin-top: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 2rem;
+}
+
+.single_there_img img {
+    max-width: 42px;
+    width: 100%;
+}
+
+.single_there_title h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.single_there_title p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #e4e4e7;
+}
+/*
+.home_customer .owl-nav button span {
+    font-size: 2rem;
+    color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_customer .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home_customer .owl-nav .owl-prev {
+    left: -2.5rem;
+}
+
+.home_customer .owl-nav .owl-next {
+    right: -2.5rem;
+} */
+
+.home_customer .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-block: 3rem 1rem;
+}
+
+.home_customer .owl-dots .owl-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.31);
+    border-radius: 50rem;
+    transition: 300ms;
+}
+
+.home_customer .owl-dots .owl-dot.active,
+.home_customer .owl-dots .owl-dot:hover {
+    background-color: rgba(255, 255, 255, 0.62);
+}
+
+/*   End Home Travel Planning Css
+************************************/
+
+/*   Start About Offer Section Css
+************************************/
+.about_offer_section {
+    padding: 60px 0 140px 0;
+}
+
+.about_offer_heading {
+    max-width: 605px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.about_offer_heading h3 {
+    text-align: center;
+    color: #101828;
+}
+
+.about_offer_heading p {
+    margin-top: 24px;
+    text-align: center;
+    color: #767676;
+}
+
+.about_offer {
+    margin-top: 4rem;
+}
+
+.about_offer ul {
+    font-size: 1.125rem;
+    font-weight: 500;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 4rem;
+}
+
+/*   End About Offer Section Css
+************************************/
+
+/*   Start About Choose Section Css
+************************************/
+.about_choose_section {
+    padding: 109px 0;
+    background: #30bc90;
+}
+
+.about_choose_header {
+    max-width: 654px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.about_choose_header h3 {
+    line-height: 100%;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.about_choose_header p {
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.single_about_choose {
+    text-align: center;
+    padding: 60px 32px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.single_about_choose img {
+    max-width: 160px;
+    margin: auto;
+}
+
+.single_about_choose h5 {
+    margin: 24px 0 8px 0;
+}
+
+.single_about_choose p {
+    font-size: 14px;
+    text-align: center;
+    color: #767676;
+}
+
+/*   End About Choose Section Css
+************************************/
+
+/*   Start About Cloud Section Css
+************************************/
+.about_cloud_section {
+    padding: 140px 0;
+}
+
+.about_cloud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single_cloud_img img {
+    max-width: 666px;
+    width: 100%;
+}
+
+.cloud_titel {
+    max-width: 588px;
+    width: 100%;
+}
+
+.cloud_titel h3 {
+    margin-bottom: 24px;
+}
+
+.cloud_titel p {
+    margin-bottom: 40px;
+    color: #767676;
+}
+
+.about_cloud_list li {
+    font-weight: 500;
+}
+
+/*   End About Cloud Section Css
+************************************/
+
+/*   Start About Largest Css
+************************************/
+.about_largest {
+    margin-bottom: 140px;
+}
+
+.about_largest_content {
+    max-width: 604px;
+    width: 100%;
+}
+
+.about_largest_title h3 {
+    color: #101828;
+    margin-bottom: 20px;
+}
+
+.about_largest_title p {
+    font-size: 16px;
+    line-height: 26px;
+    /* letter-spacing: 0.27px; */
+    color: #767676;
+    margin-bottom: 58px;
+}
+
+/* .main_about_counter{
+  max-width: 604px;
+  width: 100%;
+}
+ */
+.about_counter {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.single_counter {
+    max-width: 290px;
+    width: 100%;
+    padding: 32px;
+    background: #ffffff;
+    box-shadow: 0px 3.6472px 54.708px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.single_counter h4 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #30bc90;
+    margin-bottom: 17px;
+}
+
+.single_counter p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #767676;
+}
+
+.single_counter_bottom {
+    max-width: 290px;
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.about_largest_img {
+    text-align: center;
+}
+
+.about_largest_img img {
+    max-width: 732px;
+    width: 100%;
+}
+
+/*   End About Largest Css
+************************************/
+
+/*     Start Travel Portal Page CSS
+***********************************/
+/* B2B Area CSS */
+.b2b-section-title {
+    text-align: center;
+    margin-top: 87px;
+}
+
+.b2b-section-title h3 {
+    margin-bottom: 24px;
+}
+
+.b2b-section-title p {
+    max-width: 703px;
+    width: 100%;
+    margin: auto;
+}
+
+.b2b-chart {
+    position: relative;
+    max-width: 724px;
+    width: 100%;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.chart-list li {
+    background: #ffffff;
+    box-shadow: 0px 7px 36px rgba(53, 80, 111, 0.1);
+    border-radius: 4px;
+    color: #1b1b1b;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 15px 16px;
+    /* display: inline-block; */
+    position: absolute;
+}
+
+.chart-list .chart-1 {
+    top: 85px;
+    left: 60px;
+}
+
+.chart-list .chart-2 {
+    top: 195px;
+    left: -11px;
+}
+
+.chart-list .chart-3 {
+    top: 317px;
+    left: 15px;
+}
+
+.chart-list .chart-4 {
+    top: 428px;
+    left: 157px;
+}
+
+.chart-list .chart-5 {
+    top: 22px;
+    right: -22px;
+}
+
+.chart-list .chart-6 {
+    top: 134px;
+    right: 32px;
+}
+
+.chart-list .chart-7 {
+    top: 255px;
+    right: -22px;
+}
+
+.chart-list .chart-8 {
+    top: 360px;
+    right: 46px;
+}
+
+/* B2C Area CSS */
+.b2c-area {
+    background: url(../images/travel/background1.png) no-repeat scroll center
+        center / cover;
+}
+
+.b2c-section-title {
+    text-align: center;
+    margin-top: 128px;
+    margin-bottom: 60px;
+}
+
+.b2c-section-title h3 {
+    margin-bottom: 24px;
+}
+
+.b2c-section-title p {
+    max-width: 751px;
+    width: 100%;
+    margin: auto;
+}
+
+.b2c-list-area {
+    display: flex;
+}
+
+.b2c-list-area li {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    position: relative;
+    height: 72px;
+    margin: 10px 0;
+}
+
+.b2c-list-area li::after {
+    content: "";
+    position: absolute;
+    width: 173px;
+    height: 70px;
+}
+
+.b2c-left-list {
+    flex-basis: 50%;
+}
+
+.b2c-left-list ul {
+    border-right: 1px solid #30bc90;
+    padding-right: 183px;
+}
+
+.b2c-left-list ul li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.b2c-right-list {
+    flex-basis: 50%;
+}
+
+.b2c-right-list ul {
+    padding-left: 183px;
+    padding-top: 43px;
+    padding-bottom: 100px;
+}
+
+.b2c-right-list ul li {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.b2c-left-list li::after {
+    right: -185px;
+    top: 14%;
+    background: url(../images/travel/left-angle.png) no-repeat scroll center
+        center / cover;
+    transform: translateY(-50%);
+}
+
+.b2c-right-list li::after {
+    left: -184px;
+    top: 20%;
+    background: url(../images/travel/right-angle.png) no-repeat scroll center
+        center / cover;
+    transform: translateY(-50%);
+}
+
+/* B2E Area CSS */
+.b2e-heading h3 {
+    text-align: center;
+    padding: 80px 0 40px 0;
+}
+
+.b2e-content-area {
+    display: flex;
+    align-items: center;
+    max-width: 853px;
+    width: 100%;
+    margin: auto;
+    filter: drop-shadow(0px 3.6472px 54.708px rgba(33, 40, 69, 0.08));
+    margin-bottom: 80px;
+}
+
+.b2e-list {
+    flex-basis: 350px;
+}
+
+.b2e-banner {
+    flex-basis: 503px;
+    padding: 0 42px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.b2e-banner img {
+    max-width: 419px;
+    margin: auto;
+}
+
+.b2e-list li {
+    background: #ffffff;
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #101828;
+    padding: 11px 16px;
+}
+
+.b2e-list li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+/*     End Travel Portal Page CSS
+*********************************/
+
+/*     Start Pricing Page CSS
+*********************************/
+.pricing-title {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.pricing-title p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: #777e91;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.pricing-title h3 {
+    line-height: 48px;
+    color: #23262f;
+}
+
+.pricing-area {
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 54px;
+    align-items: center;
+}
+
+.pricing-single {
+    padding: 41px 50px 64px;
+    background: #fcfcfd;
+    border-radius: 99px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+.pricing-single.active,
+.pricing-single:hover {
+    border: 1px solid #e6e8ec;
+    box-shadow: 0px 60px 80px -44px rgba(15, 35, 85, 0.12);
+    padding: 41px 50px 96px;
+}
+
+.pricing-logo {
+    max-width: 178px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.pricing-type h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #23262f;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e6e8ec;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.pricing-type h4 span {
+    padding: 6px 8px;
+    background: #165541;
+    border-radius: 4px;
+    color: #fcfcfd;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.pricing-price {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.pricing-price h3 {
+    color: #23262f;
+    letter-spacing: -0.01em;
+    line-height: 48px;
+    font-family: "Inter";
+    padding-left: 24px;
+}
+
+.pricing-price h3 span {
+    color: #b1b5c3;
+}
+
+.pricing-price img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.package-list li {
+    padding-left: 24px;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777e91;
+}
+
+.package-list li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.package-list li::after {
+    content: " ";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: url(../images/pricing/check.png) no-repeat scroll center center /
+        cover;
+    left: 0;
+    top: 0;
+}
+
+.pricing-button {
+    margin: 40px 0 0px 0;
+    text-align: center;
+}
+
+.pricing-button a {
+    display: inline-block;
+}
+
+/*     End Pricing Page CSS
+*********************************/
+
+/*  Start Pricing-Cart Page CSS
+*********************************/
+.cart_title {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.cart {
+    max-width: 695px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 52px;
+}
+
+.price_details {
+    width: 100%;
+    padding: 32px;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+}
+
+.price_details h4 {
+    font-size: 24px;
+}
+
+.corporate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px 20px;
+    padding-top: 30px;
+}
+
+.cart_price {
+    display: flex;
+    align-items: center;
+}
+
+.corporate span {
+    height: 2px;
+    max-width: 352px;
+    width: 100%;
+    background: #e6e8ec;
+}
+
+.cart_price h4 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.cart_price h4 p {
+    font-weight: 700;
+    color: #b1b5c4;
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+.cart_price img {
+    height: 18px;
+    width: 18px;
+    margin-top: -17px;
+    margin-right: 5px;
+}
+
+.billing_Info_area {
+    padding: 32px;
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.billing_Info_area h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 30px;
+}
+
+.was-validated .form-control:valid:focus,
+.was-validated .form-check-input:valid:checked,
+.was-validated .form-check-input:valid {
+    border-color: #30bc90;
+}
+
+.form-select.is-invalid,
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: var(--bs-form-invalid-border-color) !important;
+}
+
+.confirm_btn .btn3 {
+    margin-top: 52px;
+    padding: 20px 50px;
+    border: none;
+}
+
+/* number arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.building_feild {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 32px;
+}
+
+.country_option {
+    width: 100%;
+}
+
+.billing_Info_area label {
+    display: block;
+    color: #101828;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.form-main-container label {
+    text-transform: capitalize;
+}
+/* .billing_Info_area form .form-select {
+  background-image: url("../images/pricingCart/Small.png");
+  background-size: 24px 24px;
+}
+ */
+.billing_Info_area .select-option {
+    border: 2px solid #e3e5e8;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 1px 16px;
+    outline: none;
+    font-size: 14px !important;
+    height: 48px;
+    line-height: 42px;
+    box-shadow: none;
+    background: none;
+}
+
+.billing_Info_area .select-option .list {
+    width: 100%;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.billing_Info_area .select-option .list li:first-of-type {
+    display: none;
+}
+
+.billing_Info_area .nice-select:after {
+    outline: 2px solid #e3e5e8;
+    outline-offset: 7px;
+    border-radius: 50%;
+    right: 15px;
+}
+
+.billing_Info_area input,
+.billing_Info_area textarea {
+    border: 2px solid #e3e5e8;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.billing_Info_area textarea {
+    margin-bottom: 28px;
+    height: 235px;
+}
+
+.billing_Info_area input,
+.billing_Info_area textarea,
+.billing_Info_area button {
+    width: 100%;
+    padding: 12px 16px;
+    outline: none;
+    font-size: 14px !important;
+}
+
+.billing_Info_area .small_padding {
+    padding: 8px 16px;
+}
+
+.pay_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+    gap: 30px 20px;
+}
+
+.pay_title h4 {
+    padding-bottom: 0px !important;
+}
+
+.cradite_card .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background: #30bc90;
+    color: #ffffff;
+}
+
+.cradite_card .nav-pills .nav-link {
+    padding: 16px 25px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #767676;
+}
+
+.cradite_card .nav {
+    column-gap: 8px;
+}
+
+.cradite_card2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_img {
+    display: flex;
+    align-items: center;
+    gap: 0px 30px;
+}
+
+.card_img img {
+    max-width: 40px;
+    height: 12px;
+    width: 70% !important;
+}
+
+.card_icon2 {
+    height: 16px !important;
+}
+
+.cradite_card2 {
+    margin-bottom: 40px;
+}
+
+.cradite_card2 p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #23262f;
+}
+
+.card_img .paypal {
+    max-width: 75px;
+    height: auto;
+}
+
+.pay_area #number::placeholder {
+    color: #000000;
+}
+
+.pay_area input#date {
+    color: #818181;
+    text-transform: uppercase;
+}
+
+.PayCheckbox {
+    display: flex;
+    align-items: center;
+}
+
+.PayCheckbox input {
+    margin-bottom: 10px !important;
+    margin-right: 10px;
+    height: 22px;
+    width: 22px !important;
+    padding: 0 !important;
+}
+
+.cart_area {
+    padding-top: 10rem;
+}
+
+.cart_area form label {
+    font-size: 14px;
+    line-height: 12px;
+    color: #767676;
+}
+
+.PayCheckbox label {
+    color: #000000 !important;
+    font-weight: 500;
+}
+
+/*   End Pricing-Cart Page CSS
+*********************************/
+
+/*     Start Contact Page CSS
+****************************/
+.contact_header {
+    background: linear-gradient(
+        180deg,
+        #f5fcf9 0%,
+        rgba(245, 252, 249, 0) 0.01%,
+        rgba(245, 252, 249, 0.9375) 100%
+    );
+}
+
+.contact_banner_img {
+    max-width: 754px;
+    width: 100%;
+    margin: auto;
+}
+
+.contact_banner_img img {
+    margin-top: -70px;
+}
+
+/* Help area css */
+.help_area {
+    padding: 140px 0px;
+}
+
+.help_title {
+    text-align: center;
+}
+
+.help_title p {
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+.help_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 32px;
+}
+
+.single_help {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #e3e5e8;
+    border-radius: 8px;
+    height: 100% !important;
+    transition: 0.5s;
+}
+
+.single_help:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.help_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 64px;
+    width: 100%;
+    margin: auto;
+    height: 64px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.help_icon:hover {
+    background: #b5c2bdd5;
+}
+
+.help_icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.single_help h5 {
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.single_help .green_text2 {
+    padding-top: 12px;
+    color: #2ba982;
+}
+
+.map_area iframe {
+    height: 560px;
+}
+
+.single_help .reference_link,
+.single_help .reference_link * {
+    color: #009f6b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Touch Area css */
+.touch_area {
+    margin-top: -110px;
+}
+
+.touch {
+    padding: 60px;
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 3.6472px 54.708px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-bottom: 140px;
+}
+
+.touch_title {
+    text-align: center;
+}
+
+.touch_title h3 {
+    font-weight: 600;
+}
+
+.touch_title p {
+    max-width: 485px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 48px;
+}
+
+.touch_from_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 24px;
+    width: 100%;
+}
+
+.name_field {
+    flex-basis: 50%;
+}
+
+.email_field {
+    flex-basis: 50%;
+}
+
+.touch_from_area form label {
+    display: block;
+    color: #101828;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.touch_from_area form input,
+.touch_from_area form textarea {
+    background: #ffffff;
+    border: 1px solid #e3e5e8;
+    border-radius: 8px;
+    margin-bottom: 22px;
+}
+
+.touch_from_area form textarea {
+    margin-bottom: 28px;
+    height: 235px;
+    resize: none;
+}
+
+.touch_from_area form input,
+.touch_from_area form textarea,
+.touch_from_area form button {
+    width: 100%;
+    padding: 16px 24px;
+    outline: none;
+}
+
+.touch_from_area form button {
+    padding: 16px !important;
+    border: none;
+    outline: none;
+}
+
+.contact-alert {
+    max-width: 100%;
+    width: 20rem;
+}
+
+/*     Start Contact Page CSS
+****************************/
+
+/*     Start Flight Page CSS
+****************************/
+.flight_header {
+    background: #f5fcf9;
+}
+
+.flight_banner_img {
+    max-width: 710px;
+    width: 100%;
+    margin: auto;
+}
+
+.flight_banner_img img {
+    margin-top: 30px;
+}
+
+.flight_hero {
+    background: url(../images/flight/flight-vactor.png) no-repeat scroll center
+        center / cover;
+    height: 88px;
+    width: 100%;
+    margin-top: -35px;
+}
+
+/* Faq content area  */
+.faq_content_area {
+    padding-block: 5rem;
+}
+
+.faq_grid {
+    display: grid;
+    align-content: start;
+    gap: 4rem;
+}
+
+.faq_sidebar {
+    width: 100%;
+    max-height: 540px;
+    padding: 1.5rem;
+    border: 1px solid #d4d4d4;
+    overflow-y: scroll;
+    position: sticky;
+    top: 8rem;
+    left: 0;
+}
+
+/* Firefox */
+.faq_sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: #d4d4d4 #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+.faq_sidebar::-webkit-scrollbar {
+    width: 7px;
+    width: 7px;
+}
+
+.faq_sidebar::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.faq_sidebar::-webkit-scrollbar-track:hover {
+    background-color: #ffffff;
+}
+
+.faq_sidebar::-webkit-scrollbar-track:active {
+    background-color: #ffffff;
+}
+
+.faq_sidebar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #d4d4d4;
+}
+
+.faq_sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #d4d4d4;
+}
+
+.faq_sidebar::-webkit-scrollbar-thumb:active {
+    background-color: #d4d4d4;
+}
+
+.faq_sidebar_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px 10px;
+    margin-bottom: 30px;
+}
+
+.faq_sidebar_title img {
+    height: 20px;
+    width: 20px;
+}
+
+.faq_sidebar ul li {
+    position: relative;
+    color: #000000;
+    margin-left: 14px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.faq_sidebar ul li a {
+    color: #000000;
+}
+
+.faq_sidebar ul li::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: rgba(48, 188, 144, 0.3);
+    border-radius: 50%;
+    left: -14px;
+    top: 8px;
+}
+
+.faq_sidebar ul li.active_list::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #009f6b;
+    border-radius: 50%;
+    left: -14px;
+    top: 8px;
+}
+
+.faq_content_pera {
+    margin-bottom: 48px;
+    max-width: 938px;
+}
+
+.faq_content_pera h4 {
+    padding-bottom: 12px;
+}
+
+.faq_content_pera p {
+    line-height: 26px;
+}
+
+.faq_content_pera p:not(:last-of-type) {
+    margin-bottom: 1.25rem;
+}
+
+.faq_content_pera li {
+    position: relative;
+    color: #33383f;
+    margin-left: 23px;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.faq_content_pera li:after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #000000;
+    left: -12px;
+    top: 10px;
+}
+
+/*     End Flight Page CSS
+***************************/
+
+/*     Start Hotel Page CSS
+****************************/
+.hotel_pera p {
+    padding-bottom: 18px;
+}
+
+.hotel_sitebar {
+    height: 449px;
+}
+/*     End Flight Page CSS
+***************************/
+
+/*     Start New Tab CSS
+***************************/
+.newtab-section {
+    background: #fafafa;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.newtab-title {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.newtab-title h4 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.newtab-title p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.newtab-area .nav-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.newtab-area .nav-tabs .nav-link {
+    background-color: transparent;
+    border-radius: 8px;
+    /* box-shadow: 0 8px 32px 0 rgba(84,85,102,.14); */
+    cursor: pointer;
+    padding: 25px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+    color: #767676;
+    position: relative;
+    height: calc(100% - 20px);
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: "Inter";
+    border: 1px solid #30bc90;
+}
+
+.newtab-area .nav-tabs .nav-link.active {
+    background: #30bc90;
+    color: #fff;
+}
+
+.newtab-area .nav-tabs {
+    border-bottom: none;
+}
+
+.newtab-area .nav-link.active::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: #30bc90;
+    transform: rotate(45deg) translateX(-50%);
+    left: 50%;
+    bottom: -17px;
+}
+
+.newtab-content {
+    background-color: #fff;
+    /* border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(84,85,102,.14); */
+    padding: 40px;
+}
+
+.tab_item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 40px 65px;
+}
+
+.single_tab_items {
+    max-width: 348px;
+    height: 100%;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.single_tab_heading {
+    margin-bottom: 15px;
+}
+
+.single_tab_heading h4 {
+    max-width: 243px;
+    width: 100%;
+}
+
+.single_tab_heading img {
+    width: auto;
+    height: 70px;
+    margin-bottom: 32px;
+}
+
+.tab_button {
+    margin-top: 80px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #5288e4;
+    transition: 0.5s;
+}
+
+.tab_button:hover {
+    color: #d13221;
+}
+
+.tab_button i {
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+/*     End New Tab CSS
+***************************/
+
+/*     Start Footer Area Css
+*********************************/
+.footer_area {
+    padding: 96px 0 36px 0;
+    background: #fafafa;
+}
+
+.footer_top {
+    max-width: 739px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer_button {
+    text-align: center;
+    margin: 57px 0 136px 0;
+}
+
+.footer_logo a img {
+    width: 153px;
+    height: auto;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d4d4d8;
+}
+
+.footer_bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 34px;
+}
+
+.footer_menu ul li a {
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #12141d;
+    transition: 0.5s;
+}
+
+.footer_menu ul li a:hover {
+    color: #30bc90;
+}
+
+.social_icon ul li a {
+    color: #27272a;
+    transition: 0.5s;
+}
+
+.social_icon ul li a:hover {
+    color: #30bc90;
+}
+
+.footer_copy_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+}
+
+.copy_right_right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 47px;
+}
+
+.copy_right_right ul li a {
+    line-height: 26px;
+    color: #52525b;
+    transition: 0.3s;
+}
+
+.copy_right_right ul li a:hover {
+    color: #000;
+}
+
+/*     End Footer Area Css
+*********************************/
+
+/*     Start Page Header
+*********************************/
+.page_header {
+    padding-top: 10rem;
+    min-height: 680px;
+    position: relative;
+    text-align: center;
+    background-color: #f5fcf9;
+    z-index: 0;
+}
+
+.bg_holder {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.page_header_tagline {
+    color: #33bc90;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.page_header_title {
+    color: #101828;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.page_header_description {
+    color: #475467;
+    font-size: 1.25rem;
+}
+
+.contact_page_header .bg_holder {
+    background-size: 50% auto;
+}
+
+.pricing_page_header {
+    background-color: #ffffff;
+}
+/*     End Page Header
+*********************************/
+
+/*     Start Not Found Page
+    *********************************/
+.not_found_page_header {
+    min-height: 560px;
+}
+
+.not_found_header_content {
+    padding-block: 4rem;
+    text-align: center;
+}
+
+.not_found_header_content .page_header_description {
+    max-width: 650px;
+    margin-inline: auto;
+    margin-bottom: 5rem;
+}
+
+/*     End Not Found Page
+*********************************/
+
+/*     Start Email Template
+*********************************/
+.email_page_header {
+    min-height: 480px;
+}
+/*     End Email Template
+*********************************/
+
+/*     Start Language Dropdown
+*********************************/
+.language_dropdown img {
+    flex-shrink: 0;
+    aspect-ratio: 4 / 3;
+    width: 1.5rem;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 0.1875rem;
+}
+
+.language_dropdown .dropdown-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/*     End Language Dropdown
+*********************************/
+
+.skiptranslate {
+    display: none !important;
+}

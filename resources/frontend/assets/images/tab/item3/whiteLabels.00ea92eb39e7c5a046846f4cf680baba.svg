@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48">
+    <defs>
+        <filter id="prefix__a" width="108.9%" height="109.1%" x="-4.4%" y="-4.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <filter id="prefix__c" width="118.5%" height="118.3%" x="-9.2%" y="-9.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="prefix__b" cx="68.166%" cy="65.098%" r="62.366%" fx="68.166%" fy="65.098%" gradientTransform="matrix(1 0 0 .98947 0 .007)">
+            <stop offset="0%" stop-color="#FFCC4C"/>
+            <stop offset="100%" stop-color="#FFE367"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H80V48H0z" transform="translate(-16)"/>
+        <path fill-rule="nonzero" stroke="#CFCFCF" stroke-width="2" d="M29.085 4.124c-2.709.511-4.974 2.432-5.942 5.047L17.494 24.4c-.971 2.625-.49 5.53 1.254 7.635l10.143 12.245c.877 1.058 2.006 1.834 3.256 2.28 1.248.445 2.617.562 3.978.303l15.787-2.99c2.709-.51 4.974-2.431 5.942-5.046l5.652-15.226c.971-2.625.49-5.531-1.254-7.636L52.106 3.718c-.949-1.146-2.114-2.098-6.542-1.947-3.169.107-8.2.786-16.48 2.353z" filter="url(#prefix__a)" transform="translate(-16)"/>
+        <path fill="url(#prefix__b)" fill-rule="nonzero" stroke="#FFF" stroke-width="2" d="M40.417 4.377c-.74.199-1.397.589-1.92 1.116-.52.526-.904 1.188-1.1 1.934l-2.003 7.634c-.39 1.485.035 3.072 1.116 4.163l5.55 5.61c.543.547 1.208.928 1.921 1.123.716.196 1.48.205 2.22.007l5.367-1.438c.414-.111 1.844-1.257 3.168-2.58 1.336-1.335 2.494-2.782 2.6-3.19l1.443-5.5c.391-1.485-.034-3.071-1.116-4.163l-5.547-5.61c-.585-.59-1.248-1.123-3.697-.86-1.556.169-4.001.683-8.002 1.754z" filter="url(#prefix__c)" transform="translate(-16) rotate(5 47.087 14.158)"/>
+        <g fill-rule="nonzero" stroke="#191919" stroke-width="2">
+            <path d="M37.839 9.58L27.679 8.524 17.726 6.623 17.726 2.649 27.644 0.7 34.659 0" transform="translate(-16) rotate(67 13.142 21.137)"/>
+            <path fill="#FFF" d="M17.726 4.175c-5.727-9.009-9.542-.747-17.726 0 7.531 9.266 17.726 3.795 17.726 0z" transform="translate(-16) rotate(67 13.142 21.137)"/>
+        </g>
+        <path fill="#CFCFCF" d="M59.916 14.396l1.312 1.51-2.263 1.969 2.623 3.017-1.51 1.312-2.622-3.016-3.772 3.282 2.621 3.015-1.51 1.312-2.62-3.014-3.771 3.282 2.618 3.012-1.51 1.312-2.617-3.011-3.772 3.282 2.616 3.01-1.51 1.311-2.615-3.008-3.772 3.281 2.614 3.008-1.509 1.312-2.614-3.007-3.772 3.282 2.612 3.005-1.509 1.312-2.612-3.004-1.561 1.359-1.312-1.51 31.737-27.615z" transform="translate(-16)"/>
+    </g>
+</svg>
