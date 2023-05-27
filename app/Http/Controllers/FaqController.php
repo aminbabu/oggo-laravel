@@ -35,4 +35,31 @@ class FaqController extends Controller
 
         return view('frontend.pages.flight-suppliers', ['faqs' => $faqs]);
     }
+
+
+    /**
+    | read privacy policy data
+    |
+    */
+    public function privacy_policies(): View
+    {
+        $supplier_type = Supplier::where('supplier_type', 'privacy')->first();
+
+        $faqs = FaqModel::where('supplier_id', $supplier_type->id)->get();
+
+        return view('frontend.pages.privacy', ['faqs' => $faqs]);
+    }
+
+    /**
+    | read terms and conditions data
+    |
+    */
+    public function terms_and_conditions(): View
+    {
+        $supplier_type = Supplier::where('supplier_type', 'terms')->first();
+
+        $faqs = FaqModel::where('supplier_id', $supplier_type->id)->get();
+
+        return view('frontend.pages.terms', ['faqs' => $faqs]);
+    }
 }

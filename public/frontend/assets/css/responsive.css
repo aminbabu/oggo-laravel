@@ -1048,6 +1048,11 @@
     }
     /*     End Language Dropdown
     *********************************/
+
+    .cart_confirmation .corporate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 @media all and (max-width: 450px) {

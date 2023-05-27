@@ -21,10 +21,15 @@ Route::get('/hotel-suppliers', [FaqController::class, 'hotel_suppliers'])->name(
 
 Route::get('/flight-suppliers', [FaqController::class, 'flight_suppliers'])->name('flight-suppliers');
 
+Route::get('/privacy', [FaqController::class, 'privacy_policies'])->name('privacy');
+
+Route::get('/terms', [FaqController::class, 'terms_and_conditions'])->name('terms');
+
 Route::get('/pricing', [PackageController::class, 'index'])->name('pricing');
 
 Route::get('/cart/{plan_id}', [CartController::class, 'index'])->name('cart.select.plan');
 Route::post('/cart/{plan_id}', [CartController::class, 'store'])->name('cart.store.plan');
+Route::get('/cart/{plan_id}/pay-confirmation', [CartController::class, 'confirmation'])->name('cart.confirmation');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

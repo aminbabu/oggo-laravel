@@ -46,50 +46,64 @@ class CartController extends Controller
      *
      * @return view
      */
-    public function store(Request $request, $plan_id): RedirectResponse|Response
+    public function store(Request $request, $plan_id): RedirectResponse|Response|View
     {
         // check selected package availability
         $package = $this->package_available($plan_id);
 
         // validate form request
-        $this->validated($request);
+        $data = $this->validated($request);
+        $data['pay_with'] = $request->pay_with;
+
+        return view('frontend.pages.cart-confirmation', ['package' => $package, 'data' => $data]);
+    }
+
+    /**
+     * store invoice and send confirmation email to the customer
+     *
+     */
+    public function confirmation(Request $request, $plan_id): RedirectResponse|Response|View
+    {
+        // check selected package availability
+        $package = $this->package_available($plan_id);
+        $data = json_decode($request->data);
 
         /* TODO: Payment system integration */
 
         // do some transaction stuffs
         $transaction_successful = true;
 
-        if ($transaction_successful) {
-            // store customer details
-            $order = $package->orders()->create([
-                'payment_system' => $request->pay_with,
-                'first_name' => $request->fname,
-                'last_name' => $request->lname,
-                'email' => $request->email,
-                'country' => $request->country,
-                'city' => $request->city,
-                'state' => $request->state,
-                'zip_code' => $request->zip_code,
-                'street' => $request->street,
-            ]);
-
-
-            // generate invoice
-            $invoice = $this->generateInvoice($request, $package, $order->id);
-
-            // store invoice
-            $order->invoice()->create([
-                'invoice' => $invoice->filename,
-            ]);
-
-            // send the sender email
-            Mail::send(new SenderInvoiceMail($invoice));
-
-            return $invoice->stream();
+        if (!$transaction_successful) {
+            // redirect back
+            return redirect()->back()->with('failed', 'Transaction could not successful. Please check the payment details and try again later!');
         }
 
-        // redirect back
-        return redirect()->back()->with('failed', 'Transaction could not successful. Please check the payment details and try again later!');
+        // store customer details
+        $order = $package->orders()->create([
+            'payment_system' => $data->pay_with,
+            'first_name' => $data->fname,
+            'last_name' => $data->lname,
+            'email' => $data->email,
+            'country' => $data->country,
+            'city' => $data->city,
+            'state' => $data->state,
+            'zip_code' => $data->zip_code,
+            'street' => $data->street,
+        ]);
+
+
+        // generate invoice
+        $invoice = $this->generateInvoice($data, $package, $order->id);
+
+        // store invoice
+        $order->invoice()->create([
+            'invoice' => $invoice->filename,
+        ]);
+
+        // send the sender email
+        Mail::send(new SenderInvoiceMail($invoice));
+
+        return view('frontend.pages.invoice-confirmation', ['order_id' => $order->id]);
     }
 
     /**
@@ -148,7 +162,7 @@ class CartController extends Controller
      * generate order invoice
      *
      */
-    protected function generateInvoice(Request $request, $package, $order_id)
+    protected function generateInvoice($data, $package, $order_id)
     {
         // create seller
         $seller = new Party([
@@ -160,11 +174,11 @@ class CartController extends Controller
 
         // create buyer
         $buyer = new Party([
-            'name' => $request->fname . ' ' . $request->lname,
-            'email' => $request->email,
-            'address' => "$request->street, $request->state-$request->zip_code, $request->city, $request->country",
+            'name' => $data->fname . ' ' . $data->lname,
+            'email' => $data->email,
+            'address' => "$data->street, $data->state-$data->zip_code, $data->city, $data->country",
             'custom_fields' => [
-                'email' => $request->email,
+                'email' => $data->email,
                 'order number' => '>>>' . $order_id . '<<<',
             ]
         ]);
@@ -181,6 +195,7 @@ class CartController extends Controller
         $invoice = InvoiceDocument::make('invoice')
             ->series(env('INVOICE_SERIES', '#TR'))
             ->sequence($order_id)
+            ->sequencePadding(8)
             ->delimiter('-')
             ->seller($seller)
             ->buyer($buyer)
@@ -191,7 +206,7 @@ class CartController extends Controller
             ->currencyFormat('{SYMBOL}{VALUE}')
             ->currencyThousandsSeparator(',')
             ->currencyDecimalPoint('.')
-            ->filename('invoice-' . $package->title . '-' . $request->name . '-' . $order_id)
+            ->filename('invoice-' . $package->title . '-' . $data->fname . '-' . time())
             ->taxRate(setting('site.shipping_cost') || 0)
             ->discountByPercent(setting('site.discount_percentage') || 0)
             ->shipping(setting('site.shipping_cost') || 0)

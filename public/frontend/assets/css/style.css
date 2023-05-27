@@ -55,7 +55,7 @@ p {
 h1 {
     font-family: "Plus Jakarta Sans";
     font-weight: 800;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 62px;
     text-transform: capitalize;
     color: #20252c;
@@ -64,7 +64,7 @@ h1 {
 h2 {
     font-family: "Plus Jakarta Sans";
     font-weight: 700;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 56px;
     color: #12141d;
     text-transform: capitalize;
@@ -73,7 +73,7 @@ h2 {
 h3 {
     font-family: "Inter";
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 56px;
 }
 
@@ -125,6 +125,7 @@ img {
     justify-content: center;
     text-align: center;
     gap: 0.75rem;
+    border: 1px solid #30bc90;
 }
 
 .btn2 {
@@ -138,7 +139,6 @@ img {
     font-weight: 600;
     line-height: 16px;
     padding: 16px 24px;
-    border-radius: 90px;
 }
 
 .btn1:hover {
@@ -407,7 +407,7 @@ img {
 .home_banner_top p {
     margin: 24px 0 38px 0;
     max-width: 538px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     letter-spacing: -0.01em;
     color: #565d62;
@@ -610,7 +610,7 @@ img {
 
 .home_services_header p {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     letter-spacing: -0.01em;
     color: #565d62;
@@ -907,7 +907,6 @@ img {
 }
 
 .about_offer ul {
-    font-size: 1.125rem;
     font-weight: 500;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 4rem;
@@ -1662,7 +1661,6 @@ input[type="number"] {
 
 .cradite_card .nav-pills .nav-link {
     padding: 16px 25px;
-    border-radius: 100px;
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
@@ -2259,7 +2257,7 @@ input[type="number"] {
 }
 
 .footer_top {
-    max-width: 739px;
+    max-width: 640px;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -2440,4 +2438,27 @@ input[type="number"] {
 
 .skiptranslate {
     display: none !important;
+}
+
+.cart_confirmation .corporate {
+    gap: 0.5rem 1rem;
+}
+
+.cart_confirmation .corporate:not(:last-of-type) {
+    border-bottom: 1px solid rgba(119, 126, 144, 0.25);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.cart_confirmation .corporate h4 {
+    font-size: 1rem;
+    flex: 0 0 auto;
+}
+
+.cart_confirmation .corporate h4.title {
+    color: #777e90;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1.25;
 }

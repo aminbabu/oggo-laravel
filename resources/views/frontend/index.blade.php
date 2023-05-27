@@ -19,15 +19,15 @@
                         <div class="home_rating_section">
                             <div class="single_home_ratingImg">
                                 <div class="home_ratingimg">
-                                    <img src="{{ Vite::asset('resources/frontend/assets/images/home/Ellipse-1.png') }}"
+                                    <img src="{{ asset('frontend/assets/images/home/Ellipse-1.png') }}"
                                         alt="ellipse-img" />
                                 </div>
                                 <div class="home_ratingimg_two">
-                                    <img src="{{ Vite::asset('resources/frontend/assets/images/home/Ellipse-2.png') }}"
+                                    <img src="{{ asset('frontend/assets/images/home/Ellipse-2.png') }}"
                                         alt="ellipse-img" />
                                 </div>
                                 <div class="home_ratingimg_three">
-                                    <img src="{{ Vite::asset('resources/frontend/assets/images/home/Ellipse-3.png') }}"
+                                    <img src="{{ asset('frontend/assets/images/home/Ellipse-3.png') }}"
                                         alt="ellipse-img" />
                                 </div>
                             </div>

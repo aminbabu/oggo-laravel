@@ -36,9 +36,9 @@
         <div class="container">
             <div class="about_choose_header">
                 <h3 class="text-capitalize">{{ setting('about.choose_us_title') }}</h3>
-                <p>
+                <div>
                     {!! setting('about.choose_us_description') !!}
-                </p>
+                </div>
             </div>
             <div class="row justify-content-center gy-4 gy-lg-0">
                 <!-- single about choose -->

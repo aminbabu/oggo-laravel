@@ -1,6 +1,6 @@
 <section class="page_header @isset($header_classes){{ $header_classes }}@endisset">
     @isset($header_bg_image)
-        <div class="bg_holder" style="background-image: url(/storage/{{ $header_bg_image }});">
+        <div class="bg_holder" style="background-image: url('{{ Voyager::image($header_bg_image) }}');">
         @endisset
     </div>
     <div class="container">

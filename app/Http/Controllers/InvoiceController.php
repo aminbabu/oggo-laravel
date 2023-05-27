@@ -21,6 +21,5 @@ class InvoiceController extends Controller
         $file = storage_path() . '/app/invoices/' . $invoiceItem->invoice;
 
         return response()->download($file);
-
     }
 }

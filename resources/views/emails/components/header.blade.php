@@ -4,7 +4,7 @@
             <div class="header-menu">
                 <div class="header-logo">
                     <a href="{{ route('home') }}">
-                        <img src="{{ Vite::asset('resources/frontend/assets/images/Logo.svg') }}" alt="Oggo" />
+                        <img src="{{ asset('frontend/assets/images/Logo.svg') }}" alt="Oggo" />
                     </a>
                 </div>
                 <a class="btn1" href="{{ route('contact') }}">

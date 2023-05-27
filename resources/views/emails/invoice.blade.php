@@ -148,9 +148,9 @@
                                                                 <div align="left" class="alignment"
                                                                     style="line-height:10px"><a
                                                                         href="{{ route('home') }}" style="outline:none"
-                                                                        tabindex="-1" target="_blank"><img
-                                                                            alt="Oggo"
-                                                                            src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/Logo.png')) }}"
+                                                                        tabindex="-1" target="_blank">
+                                                                        <img alt="Oggo"
+                                                                            src="{{ asset('frontend/assets/images/Logo.png') }}"
                                                                             style="display: block; height: auto; border: 0; width: 122px; max-width: 100%;"
                                                                             title="Oggo" width="122" /></a></div>
                                                             </td>
@@ -213,7 +213,7 @@
                                                                 <div align="center" class="alignment"
                                                                     style="line-height:10px"><img
                                                                         class="fullMobileWidth"
-                                                                        src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/email/header_bg.png')) }}"
+                                                                        src="{{ asset('frontend/assets/images/email/header_bg.png') }}"
                                                                         style="display: block; height: auto; border: 0; width: 680px; max-width: 100%;"
                                                                         width="680" /></div>
                                                             </td>
@@ -555,7 +555,7 @@
                                                                                     href="https://www.facebook.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Facebook" height="32"
-                                                                                        src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/email/facebook2x.png')) }}"
+                                                                                        src="{{ asset('frontend/assets/images/email/facebook2x.png') }}"
                                                                                         style="display: block; height: auto; border: 0;"
                                                                                         title="facebook"
                                                                                         width="32" /></a></td>
@@ -563,7 +563,7 @@
                                                                                     href="https://www.twitter.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Twitter" height="32"
-                                                                                        src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/email/twitter2x.png')) }}"
+                                                                                        src="{{ asset('frontend/assets/images/email/twitter2x.png') }}"
                                                                                         style="display: block; height: auto; border: 0;"
                                                                                         title="twitter"
                                                                                         width="32" /></a></td>
@@ -571,7 +571,7 @@
                                                                                     href="https://www.linkedin.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Linkedin" height="32"
-                                                                                        src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/email/linkedin2x.png')) }}"
+                                                                                        src="{{ asset('frontend/assets/images/email/linkedin2x.png') }}"
                                                                                         style="display: block; height: auto; border: 0;"
                                                                                         title="linkedin"
                                                                                         width="32" /></a></td>
@@ -579,7 +579,7 @@
                                                                                     href="https://www.instagram.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Instagram" height="32"
-                                                                                        src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/email/instagram2x.png')) }}"
+                                                                                        src="{{ asset('frontend/assets/images/email/instagram2x.png') }}"
                                                                                         style="display: block; height: auto; border: 0;"
                                                                                         title="instagram"
                                                                                         width="32" /></a></td>

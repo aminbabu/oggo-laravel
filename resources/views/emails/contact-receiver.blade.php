@@ -8,7 +8,7 @@
     <!-- start page header -->
     <section class="page_header email_page_header">
         <div class="bg_holder"
-            style="background-image: url('{{ Vite::asset('resources/frontend/assets/images/email/header_bg.png') }}');">
+            style="background-image: url('{{ asset('frontend/assets/images/email/header_bg.png') }}');">
         </div>
     </section>
     <!-- end page header -->

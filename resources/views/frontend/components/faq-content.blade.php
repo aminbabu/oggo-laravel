@@ -3,7 +3,7 @@
             <div class="faq_grid">
                 <div class="faq_sidebar">
                     <div class="faq_sidebar_title">
-                        <img src="{{ Vite::asset('resources/frontend/assets/images/flight/flight-frame.png') }}"
+                        <img src="{{ asset('frontend/assets/images/flight/flight-frame.png') }}"
                             alt="img" />
                         <h5>Content</h5>
                     </div>

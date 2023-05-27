@@ -149,7 +149,7 @@
                                                                         href="https://airtravia.com/"
                                                                         style="outline:none" tabindex="-1"
                                                                         target="_blank"><img alt="Oggo"
-                                                                            src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/Logo.png')) }}"
+                                                                            src="{{ $message->embed(asset('frontend/assets/images/Logo.png')) }}"
                                                                             style="display: block; height: auto; border: 0; width: 122px; max-width: 100%;"
                                                                             title="Oggo" width="122" /></a></div>
                                                             </td>
@@ -212,7 +212,7 @@
                                                                 <div align="center" class="alignment"
                                                                     style="line-height:10px"><img
                                                                         class="fullMobileWidth"
-                                                                        src="{{ $message->embed(Vite::asset('resources/frontend/assets/images/email/header_bg.png')) }}"
+                                                                        src="{{ $message->embed(asset('frontend/assets/images/email/header_bg.png')) }}"
                                                                         style="display: block; height: auto; border: 0; width: 680px; max-width: 100%;"
                                                                         width="680" /></div>
                                                             </td>

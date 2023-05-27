@@ -142,10 +142,10 @@
                                                 <div class="cradite_card2">
                                                     <p>Credit Card</p>
                                                     <div class="card_img">
-                                                        <img src="{{ Vite::asset('resources/frontend/assets/images/pricingCart/Visa.png') }}"
+                                                        <img src="{{ asset('frontend/assets/images/pricingCart/Visa.png') }}"
                                                             alt="logo" />
                                                         <img class="card_icon2"
-                                                            src="{{ Vite::asset('resources/frontend/assets/images/pricingCart/layer1.png') }}"
+                                                            src="{{ asset('frontend/assets/images/pricingCart/layer1.png') }}"
                                                             alt="logo" />
                                                     </div>
                                                 </div>
@@ -184,7 +184,7 @@
                                                     <p>Paypal</p>
                                                     <div class="card_img">
                                                         <img class="paypal"
-                                                            src="{{ Vite::asset('resources/frontend/assets/images/pricingCart/paypal.png') }}"
+                                                            src="{{ asset('frontend/assets/images/pricingCart/paypal.png') }}"
                                                             alt="" />
                                                     </div>
                                                 </div>
